@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChainShield.MA - Documentation Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white text-2xl font-bold float-animation">
+                        CS
+                    </div>
+                    <div>
+                        <h1 class="text-3xl font-bold text-gray-900">ChainShield.MA</h1>
+                        <p class="text-gray-600">Huawei Cloud ICT Competition 2025</p>
+                    </div>
+                </div>
+                <div class="text-right">
+                    <p class="text-sm text-gray-600">📍 Casablanca, Morocco</p>
+                    <p class="text-sm text-gray-600">📧 kaouthar@chainshield.ma</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-6 py-12">
+        <!-- Hero Section -->
+        <div class="text-center mb-16">
+            <h2 class="text-5xl font-bold text-gray-900 mb-4">
+                🛡️ Documentation Complète
+            </h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Tous les documents nécessaires pour la Huawei Cloud ICT Competition 2025. 
+                Cliquez sur n'importe quel document pour le consulter.
+            </p>
+        </div>
+
+        <!-- Documents Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <!-- Pitch Deck -->
+            <a href="pitch-deck.html" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+                <div class="bg-gradient-to-br from-blue-600 to-blue-700 p-8 text-white">
+                    <div class="text-5xl mb-4">📊</div>
+                    <h3 class="text-2xl font-bold mb-2">Pitch Deck</h3>
+                    <p class="text-blue-100">Présentation interactive</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                        <li>✓ 8 slides professionnelles</li>
+                        <li>✓ Bilingue FR/EN</li>
+                        <li>✓ Navigation interactive</li>
+                        <li>✓ Prêt pour projection</li>
+                    </ul>
+                    <button class="w-full bg-blue-600 text-white py-2 rounded-lg font-semibold group-hover:bg-blue-700 transition">
+                        Ouvrir →
+                    </button>
+                </div>
+            </a>
+
+            <!-- Business Model Canvas -->
+            <a href="business-model.html" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+                <div class="bg-gradient-to-br from-purple-600 to-purple-700 p-8 text-white">
+                    <div class="text-5xl mb-4">💼</div>
+                    <h3 class="text-2xl font-bold mb-2">Business Model Canvas</h3>
+                    <p class="text-purple-100">Modèle économique visuel</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                        <li>✓ 9 blocs du BMC</li>
+                        <li>✓ Design professionnel</li>
+                        <li>✓ Chiffres détaillés</li>
+                        <li>✓ Prêt à imprimer</li>
+                    </ul>
+                    <button class="w-full bg-purple-600 text-white py-2 rounded-lg font-semibold group-hover:bg-purple-700 transition">
+                        Ouvrir →
+                    </button>
+                </div>
+            </a>
+
+            <!-- One-Pager PDF -->
+            <a href="#" onclick="downloadOnePager(); return false;" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+                <div class="bg-gradient-to-br from-green-600 to-green-700 p-8 text-white">
+                    <div class="text-5xl mb-4">📄</div>
+                    <h3 class="text-2xl font-bold mb-2">One-Pager</h3>
+                    <p class="text-green-100">Résumé exécutif</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                        <li>✓ 1 page FR + 1 page EN</li>
+                        <li>✓ Toutes les infos clés</li>
+                        <li>✓ Format PDF</li>
+                        <li>✓ Prêt à partager</li>
+                    </ul>
+                    <button class="w-full bg-green-600 text-white py-2 rounded-lg font-semibold group-hover:bg-green-700 transition">
+                        Télécharger PDF →
+                    </button>
+                </div>
+            </a>
+
+            <!-- Cahier des Charges -->
+            <a href="#" onclick="downloadCahierCharges(); return false;" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+                <div class="bg-gradient-to-br from-red-600 to-red-700 p-8 text-white">
+                    <div class="text-5xl mb-4">📘</div>
+                    <h3 class="text-2xl font-bold mb-2">Cahier des Charges</h3>
+                    <p class="text-red-100">Spécifications techniques</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                        <li>✓ 40+ pages détaillées</li>
+                        <li>✓ Architecture complète</li>
+                        <li>✓ Stack technique</li>
+                        <li>✓ Plan de développement</li>
+                    </ul>
+                    <button class="w-full bg-red-600 text-white py-2 rounded-lg font-semibold group-hover:bg-red-700 transition">
+                        Télécharger PDF →
+                    </button>
+                </div>
+            </a>
+
+            <!-- Script de Démo -->
+            <a href="#" onclick="downloadScript(); return false;" class="group bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden transform hover:-translate-y-2">
+                <div class="bg-gradient-to-br from-yellow-600 to-orange-600 p-8 text-white">
+                    <div class="text-5xl mb-4">🎬</div>
+                    <h3 class="text-2xl font-bold mb-2">Script de Démo</h3>
+                    <p class="text-yellow-100">Timing minute par minute</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                        <li>✓ Chronométrage précis</li>
+                        <li>✓ Dialogues préparés</li>
+                        <li>✓ Plans B inclus</li>
+                        <li>✓ Q&A anticipées</li>
+                    </ul>
+                    <button class="w-full bg-yellow-600 text-white py-2 rounded-lg font-semibold group-hover:bg-orange-700 transition">
+                        Télécharger PDF →
+                    </button>
+                </div>
+            </a>
+
+            <!-- Guide de Déploiement -->
+            <div class="group bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-gradient-to-br from-indigo-600 to-indigo-700 p-8 text-white">
+                    <div class="text-5xl mb-4">🚀</div>
+                    <h3 class="text-2xl font-bold mb-2">Guide Déploiement</h3>
+                    <p class="text-indigo-100">Instructions pas à pas</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-2 text-sm text-gray-600 mb-4">
+                        <li>✓ Huawei Cloud setup</li>
+                        <li>✓ Architecture réseau</li>
+                        <li>✓ CI/CD pipeline</li>
+                        <li>✓ Monitoring</li>
+                    </ul>
+                    <div class="text-center text-sm text-gray-500">
+                        Inclus dans Cahier des Charges
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-12">
+            <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">🎯 Actions Rapides</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <button onclick="window.print()" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white py-4 px-6 rounded-lg font-semibold hover:shadow-lg transition flex items-center justify-center gap-2">
+                    <span>🖨️</span>
+                    <span>Imprimer tous les docs</span>
+                </button>
+                <button onclick="downloadAll()" class="bg-gradient-to-r from-green-500 to-teal-500 text-white py-4 px-6 rounded-lg font-semibold hover:shadow-lg transition flex items-center justify-center gap-2">
+                    <span>📦</span>
+                    <span>Télécharger tout (ZIP)</span>
+                </button>
+                <a href="mailto:?subject=ChainShield.MA%20Documentation&body=Voici%20la%20documentation%20complète%20de%20ChainShield.MA" class="bg-gradient-to-r from-orange-500 to-red-500 text-white py-4 px-6 rounded-lg font-semibold hover:shadow-lg transition flex items-center justify-center gap-2">
+                    <span>📧</span>
+                    <span>Partager par email</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl shadow-xl p-8">
+            <div class="text-center">
+                <h3 class="text-3xl font-bold mb-4">📌 Informations Importantes</h3>
+                <div class="grid md:grid-cols-2 gap-6 text-left max-w-4xl mx-auto">
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                        <p class="font-bold mb-2">📅 Date limite soumission :</p>
+                        <p class="text-xl">8 Novembre 2024</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                        <p class="font-bold mb-2">🎯 Événement :</p>
+                        <p class="text-xl">Huawei Cloud ICT Competition</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                        <p class="font-bold mb-2">👥 Équipe :</p>
+                        <p class="text-sm">Kaouthar • Reda • Abdellatif • Ikram • Mouad</p>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur rounded-lg p-4">
+                        <p class="font-bold mb-2">🔴 Stack :</p>
+                        <p class="text-sm">Huawei Cloud (ECS, RDS, ModelArts, OBS)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 mt-16">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-lg font-bold mb-2">🛡️ ChainShield.MA</p>
+            <p class="text-gray-400 text-sm mb-4">La confiance numérique des chaînes industrielles africaines</p>
+            <div class="flex justify-center gap-6 text-sm">
+                <a href="mailto:kaouthar@chainshield.ma" class="hover:text-blue-400 transition">📧 Email</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://github.com/chainshield" class="hover:text-blue-400 transition">💻 GitHub</a>
+                <span class="text-gray-600">|</span>
+                <a href="https://linkedin.com" class="hover:text-blue-400 transition">💼 LinkedIn</a>
+            </div>
+            <p class="text-xs text-gray-600 mt-4">© 2024 ChainShield.MA • Tous droits réservés</p>
+        </div>
+    </footer>
+
+    <script>
+        function downloadOnePager() {
+            alert('📄 Le One-Pager sera généré en PDF. Utilisez Ctrl+P sur la page Markdown pour l\'exporter.');
+        }
+
+        function downloadCahierCharges() {
+            alert('📘 Le Cahier des Charges sera généré en PDF. Utilisez Ctrl+P sur la page Markdown pour l\'exporter.');
+        }
+
+        function downloadScript() {
+            alert('🎬 Le Script de Démo sera généré en PDF. Utilisez Ctrl+P sur la page Markdown pour l\'exporter.');
+        }
+
+        function downloadAll() {
+            alert('📦 Fonctionnalité à venir : téléchargement du package complet en ZIP. Pour l\'instant, téléchargez chaque document individuellement.');
+        }
+
+        // Animation d'entrée
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.group');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                setTimeout(() => {
+                    card.style.transition = 'all 0.5s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
